@@ -1,0 +1,44 @@
+header, main, footer {
+    border: 1px solid black;
+}
+
+h1 {
+    border: 3px dotted green;
+    /* margin: 50px; */
+    padding: 20px 30px 40px 50px;
+    width: 50%;
+    position: relative;
+    top: -100px;
+    left:50px;
+}
+
+a {
+    background-color: cyan;
+}
+
+section {
+    padding: 10px;
+    border: 1px dashed red;
+}
+
+.sec1, .sec2 {
+    color: #11FF55;
+    float: left;
+}
+
+#mainpart {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    clear: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
