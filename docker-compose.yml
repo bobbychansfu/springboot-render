@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+    app:
+        image: dashrock/testaug:1.0.0
+        ports:
+            - 80:80
+        environment:
+            SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/login_system?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+            SPRING_DATASOURCE_USERNAME: dev
+            SPRING_DATASOURCE_PASSWORD: root
+        depends_on:
+            - db
+
+    db:
+        image: mysql:8.0.27
+        environment:
+            MYSQL_HOST: docker-mysql
+            MYSQL_PORT: 3306
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: login_system
+            MYSQL_USER: dev
+            MYSQL_PASSWORD: root
