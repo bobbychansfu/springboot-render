@@ -9,4 +9,7 @@ public class Helpers {
         return "Product";
     }
     
+    public String formatDate(String date) {
+        return "date";
+    }
 }
