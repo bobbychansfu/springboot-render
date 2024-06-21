@@ -7,4 +7,7 @@ public class Helpers {
     public String formatProd(){
         return "Product";
     }
+    public String formatDate() {
+        return "date";
+    }
 }
